@@ -1,0 +1,32 @@
+FROM 	my-jboss/jdk:latest
+
+MAINTAINER Anderson Lima <a.sales.lima97@gmail.com>
+
+### Variaveis
+
+ENV 	WILDFLY_VERSION 10.0.0.Final
+
+# Set variable of JBoss
+ENV 	JBOSS_HOME /opt/jboss/wildfly-${WILDFLY_VERSION}
+
+
+### Wildfly
+
+USER 	root
+
+RUN		cd $HOME \
+		&& curl -O https://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz \
+		&& tar -zxvf wildfly-${WILDFLY_VERSION}.tar.gz -C /opt/jboss \
+		&& rm -rf wildfly-${WILDFLY_VERSION}.tar.gz \
+		&& ln -s ${JBOSS_HOME}  /opt/jboss/wildfly \
+		&& chown -R jboss:0 ${JBOSS_HOME} \
+		&& chmod -R g+rw ${JBOSS_HOME} \
+		&& sed -i -e 's,<socket-binding name="http" port="${jboss.http.port:8080}"/>,<socket-binding name="http" port="${jboss.http.port:8086}"/>,g' ${JBOSS_HOME}/standalone/configuration/standalone.xml
+
+ENV		LAUNCH_JBOSS_IN_BACKGROUND true
+
+USER 	jboss
+
+EXPOSE	8086
+
+CMD		["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]

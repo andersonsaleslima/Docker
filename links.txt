@@ -1,0 +1,127 @@
+# Docker
+https://docs.docker.com/engine/docker-overview/#docker-architecture
+**https://docs.docker.com/engine/reference/commandline/create/#usage
+
+# Docker - explicação
+1- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on/
+2- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on-gerenciamento-de-redes/
+3- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on-na-pratica/
+4- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on-criacao-de-imagens/
+
+# Curso
+1- http://flaviosilveira.com/2016/comece-com-docker/
+2- http://flaviosilveira.com/2016/docker-php7-e-php-built-in/
+3- http://flaviosilveira.com/2017/criando-seu-container-nginx-php-1/
+4- http://flaviosilveira.com/2017/criando-seu-container-nginx-php-2/
+5- http://flaviosilveira.com/2017/criando-seu-container-com-dockerfile/
+
+# Docker beneficios
+https://www.meupositivo.com.br/panoramapositivo/container-docker/
+https://www.nuvic.com.br/7-razoes-para-usar-docker-e-conteineres-na-sua-empresa/
+https://www.tiespecialistas.com.br/2016/02/docker-docker-docker-e-seus-beneficios/
+https://blog.getupcloud.com/docker-docker-docker-e-a%C3%AD-quais-os-benef%C3%ADcios-9ec111c0615a
+https://www.upguard.com/articles/docker-vs.-vmware-how-do-they-stack-up
+
+# Docker HUB
+https://hub.docker.com/
+
+# 
+*https://www.digitalocean.com/community/tutorials/como-instalar-e-utilizar-o-docker-primeiros-passos-pt
+https://www.tutorialspoint.com/docker/installing_docker_on_linux.htm
+https://docs.docker.com/install/linux/docker-ce/centos/
+https://tableless.com.br/iniciando-com-o-docker-dicas-praticas-para-comecar-usar-agora-mesmo/
+*https://onebitcode.com/dominando-o-docker/
+**https://www.ibm.com/developerworks/mydeveloperworks/blogs/752a690f-8e93-4948-b7a3-c060117e8665/entry/a_fragmentacao_dos_conteineres_no_linux?lang=pt_br
+**https://www.mundodocker.com.br/criando-um-servidor-web/
+
+# Docker no CentOS
+https://www.fernandoike.com/2017/04/02/instalando-docker-ce-no-centos/
+
+# docker wildfly
+https://hub.docker.com/r/jboss/wildfly/
+
+# Docker windows
+https://docs.microsoft.com/pt-br/sql/linux/quickstart-install-connect-docker
+
+# dockerfile
+**https://woliveiras.com.br/posts/Criando-uma-imagem-Docker-personalizada/
+http://flaviosilveira.com/2017/criando-seu-container-com-dockerfile/
+http://techfree.com.br/2016/03/criando-sua-propria-imagem-docker/
+https://docs.docker.com/engine/reference/builder/#usage
+
+# Gerador de dockerfile Web
+https://phpdocker.io/generator
+
+# Rede Docker
+http://techfree.com.br/2016/02/entendendo-a-rede-do-docker/
+https://www.mundodocker.com.br/rede-no-docker/
+*https://www.youtube.com/watch?v=v5TZvmGA3pc
+https://www.youtube.com/watch?v=Js_140tDlVI
+*https://imasters.com.br/infra/compreendendo-os-drivers-do-docker-networking-e-seus-casos-de-uso/?trace=1519021197&source=single
+**https://docs.docker.com/network/#scope-of-this-topic
+
+# Rede docker macvlan
+https://pt.slideshare.net/SreenivasMakam/docker-networking-tip-macvlan-driver
+*https://docs.docker.com/v17.09/engine/userguide/networking/get-started-macvlan/#macvlan-8021q-trunk-bridge-mode-example-usage
+*https://docs.docker.com/network/macvlan/
+*https://docs.docker.com/network/network-tutorial-macvlan/
+**http://infrastructuredevops.com/01-05-2018/docker-macvlan.html
+https://blog.scottlowe.org/2016/01/28/docker-macvlan-interfaces/
+https://github.com/gopher-net/macvlan-docker-plugin
+
+# Criando ponte no centos para macvaln
+https://sreeninet.wordpress.com/2016/05/29/macvlan-and-ipvlan/
+https://www.itzgeek.com/how-tos/mini-howtos/create-a-network-bridge-on-centos-7-rhel-7.html
+**https://hicu.be/bridge-vs-macvlan
+**https://hicu.be/docker-networking-macvlan-bridge-mode-configuration
+
+# Rede docker no Windows
+**https://mcsesolution.com.br/blog/2017/05/17/docker-configurando-rede/
+
+# Voluemes no Docker
+*https://www.mundodocker.com.br/montando-volumes-docker/
+https://docs.docker.com/storage/volumes/#create-a-volume-using-a-volume-driver
+
+# Limpeza no Docker
+https://churrops.io/2017/04/24/docker-p03-manutencao-no-docker-host-limpando-removendo-e-destruindo-com-prune-e-rm/
+
+# Gerencia de recursos
+http://sidneiweber.com.br/2017/06/13/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/
+
+# XEN e Docker:
+https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/
+https://xen-orchestra.com/docs/docker_support.html
+https://www.youtube.com/watch?v=sUBluy3u3Mo
+http://ports.marllus.com/2016/02/17/docker-no-xenserver-6-5/
+https://docs.citrix.com/en-us/xencenter/6-5/xs-xc-vms-configuring/xs-xc-vms-container-manage.html
+https://www.ibm.com/developerworks/community/blogs/8ff122ba-5fbc-4844-8f62-340d437131ee/entry/Docker_running_natively_on_Xen?lang=en
+
+# Xen-orchestra
+http://domarques.com.br/blog/2014/08/xenorchestra-para-gerenciar-o-xenserver
+*https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/
+https://xen-orchestra.com/docs/patching.html
+
+# Bugs de XEN com Docker:
+https://discussions.citrix.com/topic/381661-docker-container-managment-and-xenserver-70/
+https://bugs.xenserver.org/browse/XSO-612
+
+# Solução de bug Xen com Docker:
+https://github.com/coreos/bugs/issues/1563
+
+# Vmware com Docker
+https://www.vmware.com/br/products/vsphere/integrated-containers.html
+
+# Kubernetes
+https://blog.sonda.com/kubernetes-e-containers/
+http://devopslab.com.br/kubernetes-como-instalar-e-configurar-o-kubernetes-k8s-gerencia-de-containers-docker/
+https://imasters.com.br/desenvolvimento/devops/usando-o-kubernetes-como-ferramenta-de-automatizacao-distribuicao-de-carga-monitoramento-e-orquestracao-entre-containers/
+https://www.concrete.com.br/2017/06/26/docker-kubernetes-e-openshift/
+
+# Kubernetes
+https://www.mundodocker.com.br/kubernetes-parte-i/
+https://www.mundodocker.com.br/kubernetes-parte-ii/
+https://www.mundodocker.com.br/kubernete-parte-iii/
+https://www.mundodocker.com.br/iniciando-com-pods/
+https://www.mundodocker.com.br/kubernetes-iniciando-com-services/
+https://www.mundodocker.com.br/kubernetes-namespaces/
+

@@ -1,0 +1,35 @@
+FROM 	my-jboss/base:latest
+
+MAINTAINER Anderson Lima <a.sales.lima97@gmail.com>
+
+### Variables
+
+ENV		JDK_TAR jdk-8u162-linux-x64.tar.gz
+ENV 	JDK_DIR jdk1.8.0_162
+
+# Set the JAVA_HOME variable to make it clear where Java is located
+ENV 	JAVA_HOME /opt/${JDK_DIR}
+
+#### Settings
+
+# User root user to install software
+USER 	root
+
+RUN		cd $HOME \
+		&& mkdir /usr/java \
+		&& wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.tar.gz \
+		&& tar -zxvf ${JDK_TAR} -C /opt/ \
+		&& rm -rf ${JDK_TAR} \
+		&& ln -s ${JAVA_HOME} /opt/jdk \
+
+		&& alternatives --install /usr/bin/java java ${JAVA_HOME}/bin/java 2 \
+		&& alternatives --set java ${JAVA_HOME}/bin/java \
+
+		&& alternatives --install ${JAVA_HOME}/jar jar ${JAVA_HOME}/bin/jar 2 \
+		&& alternatives --install /usr/bin/javac javac ${JAVA_HOME}/bin/javac 2 \
+
+		&& alternatives --set jar ${JAVA_HOME}/bin/jar \
+ 		&& alternatives --set javac ${JAVA_HOME}/bin/javac 
+
+# Switch back to jboss user
+USER 	jboss

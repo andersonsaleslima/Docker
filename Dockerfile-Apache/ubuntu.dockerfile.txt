@@ -1,0 +1,16 @@
+FROM ubuntu
+
+MAINTAINER Anderon Lima <a.sales.lima97@gmail.com>
+
+RUN apt-get update
+
+RUN apt-get install -y --force-yes apache2
+
+EXPOSE 80 443
+
+COPY ./index.html /var/www/html/
+
+ENTRYPOINT [ "/usr/sbin/apache2ctl", "-D", "FOREGROUND" ]
+
+# Outra opção de execução
+#CMD service apache2 start && /bin/bash

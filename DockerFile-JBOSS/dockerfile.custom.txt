@@ -1,0 +1,66 @@
+FROM centos:7
+
+### Variaveis
+
+ENV JDK.TAR jdk-8u162-linux-x64.tar.gz
+
+ENV JDK jdk1.8.0_162
+
+ENV WILDFLY wildfly-10.0.0.Final
+
+### PRE-REQUISITOS
+
+RUN yum update -y
+
+RUN yum install wget -y && yum clean all
+
+### JAVA
+
+RUN	wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+	http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.tar.gz
+
+RUN	tar -zxvf ${JDK.TAR} -C /opt/
+
+RUN	rm -rf ${JDK.TAR} 
+
+RUN	ln -s /opt/jdk /opt/${JDK}
+
+RUN	alternatives --install /usr/bin/java java /opt/jdk/bin/java 2
+RUN	alternatives --set java /opt/jdk/bin/java 
+
+RUN	alternatives --install /usr/bin/jar jar /opt/jdk/bin/jar 2
+RUN	alternatives --install /usr/bin/javac javac /opt/jdk/bin/javac 2
+
+RUN	alternatives --set jar /opt/jdk/bin/jar 
+RUN 	alternatives --set javac /opt/jdk/bin/javac
+
+ADD 	java.sh /etc/profile.d/java.sh
+
+ADD	java.csh /etc/profile.d/java.csh
+
+RUN	chown root:root /etc/profile.d/java.sh
+RUN	chmod 755 /etc/profile.d/java.sh
+RUN	chown root:root /etc/profile.d/java.csh
+RUN	chmod 755 /etc/profile.d/java.csh
+
+### Wildfly
+
+RUN	wget http://download.jboss.org/wildfly/10.0.0.Final/wildfly-10.0.0.Final.tar.gz
+
+RUN	tar -zxvf ${WILDFLY}.tar.gz -C /opt/
+
+RUN	rm -rf ${WILDFLY}.tar.gz 
+
+RUN	ln -s /opt/wildfly /opt/${WILDFLY}
+
+RUN	useradd -s /usr/sbin/nologin wildfly
+RUN	chown -R wildfly /opt/${WILDFLY}
+
+RUN 	echo "JBOSS_HOME=/opt/wildfly" >> /opt/wildfly/bin/standalone.conf
+RUN 	echo "JAVA_HOME=/opt/jdk" >> /opt/wildfly/bin/standalone.conf
+
+RUN	/opt/wildfly/bin/add-user.sh admin SENHA --silent
+
+EXPOSE	80 8080 9990
+
+CMD	["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]

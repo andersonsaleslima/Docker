@@ -1,0 +1,19 @@
+FROM 	my-jboss/wildfly:latest
+
+MAINTAINER Anderson Lima <a.sales.lima97@gmail.com>
+
+### OJDBC
+
+USER 	root
+
+RUN		mkdir /opt/jboss/wildfly/modules/system/layers/base/com/oracle/ \
+		&& mkdir /opt/jboss/wildfly/modules/system/layers/base/com/oracle/main/
+
+COPY 	./ojdbc6.jar /opt/jboss/wildfly/modules/system/layers/base/com/oracle/main/
+COPY	./module.xml /opt/jboss/wildfly/modules/system/layers/base/com/oracle/main/
+COPY	./standalone.xml /opt/jboss/wildfly/standalone/configuration/
+
+EXPOSE	80 8086
+
+CMD		["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
+

@@ -1,0 +1,19 @@
+FROM 	my-jboss/tomcat:latest
+
+MAINTAINER Anderson Lima <a.sales.lima97@gmail.com>
+
+### Variables
+
+
+
+### Wildfly
+
+USER 	root
+
+COPY	./standalone.xml /opt/jboss/wildfly/standalone/configuration/
+
+RUN		/opt/jboss/wildfly/bin/add-user.sh admin SENHA --silent
+
+EXPOSE	80 8080 8086 9990
+
+CMD     /opt/tomcat/bin/startup.sh && /bin/bash -c "/opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0"

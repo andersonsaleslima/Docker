@@ -1,0 +1,28 @@
+FROM 	my-jboss/ojdbc:latest
+
+MAINTAINER Anderson Lima <a.sales.lima97@gmail.com>
+
+### Variables
+
+ENV 	TOMCAT_VERSION 7.0.85	
+ENV 	CATALINA_HOME /opt/apache-tomcat-${TOMCAT_VERSION}
+ENV		CATALINA_BASE $CATALINA_HOME
+ENV		PATH $PATH:$CATALINA_HOME/bin
+
+### Tomcat
+
+USER 	root
+
+RUN		cd $HOME \
+		&& wget http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-7/v7.0.85/bin/apache-tomcat-7.0.85.tar.gz \
+		&& tar -zxvf apache-tomcat-7.0.85.tar.gz -C /opt/ \
+		&& rm -rf apache-tomcat-${TOMCAT_VERSION}.tar.gz \
+		&& ln -s ${CATALINA_HOME} /opt/tomcat \
+		&& chmod +x ${CATALINA_HOME}/bin/startup.sh \
+		&& chmod +x ${CATALINA_HOME}/bin/shutdown.sh \
+		&& chmod +x ${CATALINA_HOME}/bin/catalina.sh
+
+EXPOSE	8080 8086
+
+CMD     /opt/tomcat/bin/startup.sh && /bin/bash -c "/opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0"
+
