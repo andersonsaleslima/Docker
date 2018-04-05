@@ -91,6 +91,13 @@ http://sidneiweber.com.br/2017/06/13/limitando-e-atualizando-limites-de-memoria-
 # SSH em container
 https://docs.docker.com/engine/examples/running_ssh_service/#build-an-eg_sshd-image
 
+# Monitoramento
+https://www.youtube.com/watch?v=VyCVuVUqpwA
+
+# Monitoramento no zabbix
+*http://techfree.com.br/2015/04/monitorando-automaticamente-o-docker-com-zabbix/
+*https://www.youtube.com/watch?v=0cln2uXleB8&feature=youtu.be
+
 # XEN e Docker:
 https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/
 https://xen-orchestra.com/docs/docker_support.html
