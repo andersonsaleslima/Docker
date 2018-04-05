@@ -92,6 +92,9 @@ http://sidneiweber.com.br/2017/06/13/limitando-e-atualizando-limites-de-memoria-
 https://docs.docker.com/engine/examples/running_ssh_service/#build-an-eg_sshd-image
 
 # Monitoramento
+https://pt.slideshare.net/JosBarbosa43/monitoramento-de-containers-docker
+https://www.lambda3.com.br/2016/08/monitoramento-de-containers/
+http://techfree.com.br/2015/04/monitorando-automaticamente-o-docker-com-zabbix/
 https://www.youtube.com/watch?v=VyCVuVUqpwA
 
 # Monitoramento no zabbix
