@@ -2,7 +2,7 @@
 https://docs.docker.com/engine/docker-overview/#docker-architecture
 **https://docs.docker.com/engine/reference/commandline/create/#usage
 
-# Docker - explicação
+# Docker - explicaÃ§Ã£o
 1- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on/
 2- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on-gerenciamento-de-redes/
 3- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on-na-pratica/
@@ -88,6 +88,9 @@ https://churrops.io/2017/04/24/docker-p03-manutencao-no-docker-host-limpando-rem
 # Gerencia de recursos
 http://sidneiweber.com.br/2017/06/13/limitando-e-atualizando-limites-de-memoria-e-cpu-no-docker/
 
+# SSH em container
+https://docs.docker.com/engine/examples/running_ssh_service/#build-an-eg_sshd-image
+
 # XEN e Docker:
 https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/
 https://xen-orchestra.com/docs/docker_support.html
@@ -105,7 +108,7 @@ https://xen-orchestra.com/docs/patching.html
 https://discussions.citrix.com/topic/381661-docker-container-managment-and-xenserver-70/
 https://bugs.xenserver.org/browse/XSO-612
 
-# Solução de bug Xen com Docker:
+# SoluÃ§Ã£o de bug Xen com Docker:
 https://github.com/coreos/bugs/issues/1563
 
 # Vmware com Docker
