@@ -91,6 +91,9 @@ http://sidneiweber.com.br/2017/06/13/limitando-e-atualizando-limites-de-memoria-
 # SSH em container
 https://docs.docker.com/engine/examples/running_ssh_service/#build-an-eg_sshd-image
 
+# Permitir docker a usuários comuns
+
+
 # Monitoramento
 https://pt.slideshare.net/JosBarbosa43/monitoramento-de-containers-docker
 https://www.lambda3.com.br/2016/08/monitoramento-de-containers/
