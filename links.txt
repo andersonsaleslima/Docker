@@ -92,7 +92,10 @@ http://sidneiweber.com.br/2017/06/13/limitando-e-atualizando-limites-de-memoria-
 https://docs.docker.com/engine/examples/running_ssh_service/#build-an-eg_sshd-image
 
 # Permitir docker a usuários comuns
+http://devopslab.com.br/docker-como-instalar-o-docker-criacao-de-imagens-e-container/
 
+# Docke compose
+https://docs.docker.com/get-started/part3/#your-first-docker-composeyml-file
 
 # Monitoramento
 https://pt.slideshare.net/JosBarbosa43/monitoramento-de-containers-docker
