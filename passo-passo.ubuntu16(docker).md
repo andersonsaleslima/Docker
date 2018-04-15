@@ -1,7 +1,7 @@
 Ubuntu 16 - LXC-DOCKER
 ==================================================================================
 
-## Instalação
+## Instalação lsc-docker
 
 1- Certificar-se de que o suporte ao "aufs"(AnotherunionFS) está diponível
 
@@ -29,7 +29,7 @@ pacotes
 	systemctl start docker
 	systemctl enable docker
 
-## Instalação 2
+## Instalação docker-ce
 
 1- Atualizar sistema 
 
@@ -59,6 +59,3 @@ pacotes
 7- Instalando docker
 
 	apt-get install docker-ce
-
-8- 
-
