@@ -97,7 +97,7 @@ https://docs.docker.com/engine/examples/running_ssh_service/#build-an-eg_sshd-im
 # Permitir docker a usuários comuns
 http://devopslab.com.br/docker-como-instalar-o-docker-criacao-de-imagens-e-container/
 
-# Docke compose
+# Docker compose
 https://docs.docker.com/get-started/part3/#your-first-docker-composeyml-file
 
 # Monitoramento
