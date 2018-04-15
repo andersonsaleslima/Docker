@@ -2,7 +2,7 @@
 https://docs.docker.com/engine/docker-overview/#docker-architecture
 **https://docs.docker.com/engine/reference/commandline/create/#usage
 
-# Docker - explicaÃ§Ã£o
+# Docker - explicação
 1- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on/
 2- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on-gerenciamento-de-redes/
 3- https://www.mundotibrasil.com.br/docker-da-teoria-ao-hands-on-na-pratica/
@@ -82,6 +82,9 @@ https://www.itzgeek.com/how-tos/mini-howtos/create-a-network-bridge-on-centos-7-
 *https://www.mundodocker.com.br/montando-volumes-docker/
 https://docs.docker.com/storage/volumes/#create-a-volume-using-a-volume-driver
 
+# Docker armazenamento de "log" e arquivos temporários:
+http://blog.rivendel.com.br/2017/01/18/executando-containers-docker-com-seguranca-em-producao/
+
 # Limpeza no Docker
 https://churrops.io/2017/04/24/docker-p03-manutencao-no-docker-host-limpando-removendo-e-destruindo-com-prune-e-rm/
 
@@ -91,7 +94,7 @@ http://sidneiweber.com.br/2017/06/13/limitando-e-atualizando-limites-de-memoria-
 # SSH em container
 https://docs.docker.com/engine/examples/running_ssh_service/#build-an-eg_sshd-image
 
-# Permitir docker a usuÃ¡rios comuns
+# Permitir docker a usuários comuns
 http://devopslab.com.br/docker-como-instalar-o-docker-criacao-de-imagens-e-container/
 
 # Docke compose
@@ -106,6 +109,9 @@ https://www.youtube.com/watch?v=VyCVuVUqpwA
 # Monitoramento no zabbix
 *http://techfree.com.br/2015/04/monitorando-automaticamente-o-docker-com-zabbix/
 *https://www.youtube.com/watch?v=0cln2uXleB8&feature=youtu.be
+
+# Problemas dememória do Docker com JVM
+https://imasters.com.br/linguagens/java/utilizacao-de-ram-pelo-java-em-containers-as-5-principais-dicas-para-nao-perder-sua-memoria/?trace=1519021197&source=single
 
 # XEN e Docker:
 https://xen-orchestra.com/blog/docker-support-in-xenserver-the-ultimate-guide/
@@ -124,7 +130,7 @@ https://xen-orchestra.com/docs/patching.html
 https://discussions.citrix.com/topic/381661-docker-container-managment-and-xenserver-70/
 https://bugs.xenserver.org/browse/XSO-612
 
-# SoluÃ§Ã£o de bug Xen com Docker:
+# Solução de bug Xen com Docker:
 https://github.com/coreos/bugs/issues/1563
 
 # Vmware com Docker
